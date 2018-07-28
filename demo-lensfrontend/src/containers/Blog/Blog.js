@@ -15,7 +15,7 @@ class Blog extends Component {
     componentDidMount() {
         axios.get('/posts')
             .then(response => {
-                const posts = response.data.slice(0, 4);
+                const posts = response.data.slice(0, 9);
                 const updatedPosts = posts.map(post => {
                     return {
                         ...post
@@ -67,7 +67,16 @@ class Blog extends Component {
                     </div>
                 </div>
                 <div className="col-sm-9">
-
+                    <h2>รายการสินค้าทั้งหมด</h2>
+                    <section className="Posts">
+                        {posts}
+                    </section>
+                    <ul className="pagination justify-content-end" style={{marginTop: '20px'}}>
+                        <li className="page-item disabled"><a className="page-link" href="">Previous</a></li>
+                        <li className="page-item disabled"><a className="page-link" href="">1</a></li>
+                        <li className="page-item"><a className="page-link" href="">2</a></li>
+                        <li className="page-item"><a className="page-link" href="">Next</a></li>
+                    </ul>
                 </div>
             </div>
         );

@@ -14,9 +14,11 @@ class Layout extends Component {
                         {this.props.children}
                     </main>
                 </div>
-                <div className="jumbotron text-center" style={{marginBottom: 0, marginTop: '10%'}}>
-                    <p>Footer</p>
-                </div>
+                <footer className="fixed-bottom">
+                    <nav className="navbar navbar-expand-sm bg-primary navbar-light">
+                        <p className="nav-link">Demo App</p>
+                    </nav>
+                </footer>
             </Children>
         );
     }

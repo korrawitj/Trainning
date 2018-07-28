@@ -15,6 +15,9 @@ const toolbar = (props) => (
                         <NavLink exact to="/" className="nav-link">หน้าหลัก</NavLink>
                     </li>
                     <li className="nav-item">
+                        <a className="nav-link" href="">บริการหลังการขาย</a>
+                    </li>
+                    <li className="nav-item">
                         <a className="nav-link" href="">เกี่ยวกับเรา</a>
                     </li>
                     <li className="nav-item">
