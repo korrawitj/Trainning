@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from '../../axios';
 
 import Post from '../../components/Post/Post';
-// import FullPost from '../../components/FullPost/FullPost';
+import FullPost from '../../components/FullPost/FullPost';
 import './Blog.css';
 
 class Blog extends Component {
@@ -58,10 +58,10 @@ class Blog extends Component {
                                 <a className="nav-link" href="">รายการสินค้าทั้งหมด</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="">รายสินค้าใหม่</a>
+                                <div className="nav-link">รายสินค้าใหม่</div>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="">รายการสินค้ายอดนิยม</a>
+                                <div className="nav-link">รายการสินค้ายอดนิยม</div>
                             </li>
                         </ul>
                     </div>
@@ -71,7 +71,10 @@ class Blog extends Component {
                     <section className="Posts">
                         {posts}
                     </section>
-                    <ul className="pagination justify-content-end" style={{marginTop: '20px'}}>
+                    <section>
+                        <FullPost id={this.state.selectedPostId} />
+                    </section>
+                    <ul className="pagination justify-content-end" style={{ marginTop: '20px' }}>
                         <li className="page-item disabled"><a className="page-link" href="">Previous</a></li>
                         <li className="page-item disabled"><a className="page-link" href="">1</a></li>
                         <li className="page-item"><a className="page-link" href="">2</a></li>

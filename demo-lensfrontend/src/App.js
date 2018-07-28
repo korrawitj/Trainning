@@ -5,6 +5,7 @@ import './App.css';
 import Layout from './hoc/Layout/Layout';
 import Login from './components/Login/Login';
 import Blog from './containers/Blog/Blog';
+import About from './components/About/About';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Blog} />
             <Route exact path="/Login" component={Login} />
+            <Route exact path="/About" component={About} />
           </Switch>
         </Layout>
       </div>

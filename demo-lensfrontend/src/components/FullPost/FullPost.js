@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import axios from '../../axios';
 
 import './FullPost.css';
 
@@ -27,7 +27,7 @@ class FullPost extends Component {
     }
 
     render() {
-        let post = <p style={{ textAlign: 'center' }}>Please select a Post!</p>;
+        let post = <p style={{ textAlign: 'center' }}>เลือกสินค้า</p>;
         if (this.props.id) {
             post = <p style={{ textAlign: 'center' }}>Loading...</p>;
         }
@@ -41,7 +41,6 @@ class FullPost extends Component {
                         <button onClick={this.deletePosatHandler} className="Delete">Delete</button>
                     </div>
                 </div>
-
             );
         }
 
