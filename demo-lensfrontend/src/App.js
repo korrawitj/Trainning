@@ -6,7 +6,7 @@ import Layout from './hoc/Layout/Layout';
 import Login from './components/Login/Login';
 import Blog from './containers/Blog/Blog';
 import About from './components/About/About';
-
+import Howtorent from './components/Howtorent/Howtorent';
 class App extends Component {
   render() {
     return (
@@ -16,6 +16,7 @@ class App extends Component {
             <Route exact path="/" component={Blog} />
             <Route exact path="/Login" component={Login} />
             <Route exact path="/About" component={About} />
+            <Route exact path="/Howtorent" component={Howtorent} />
           </Switch>
         </Layout>
       </div>

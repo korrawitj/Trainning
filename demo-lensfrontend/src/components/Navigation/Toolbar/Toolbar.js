@@ -16,7 +16,7 @@ const toolbar = (props) => (
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/">Mirrorless</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/">GoPro</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/">วีดีโอ</NavLink></li>
-                <li className="nav-item"><NavLink className="nav-link textcolor" to="/">ขั้นตอนการเช่า/เงื่อนไข</NavLink></li>
+                <li className="nav-item"><NavLink className="nav-link textcolor" to="/Howtorent">ขั้นตอนการเช่า/เงื่อนไข</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/About">ติดต่อเรา</NavLink></li>
                 <li className="nav-item"><NavLink to="/Login" className="btn btn-outline-primary">เข้าสู่ระบบ</NavLink></li>
                 <div className="vl"></div>
@@ -46,7 +46,7 @@ const toolbar = (props) => (
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/">Mirrorless</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/">GoPro</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/">วีดีโอ</NavLink></li>
-                <li className="nav-item"><NavLink className="nav-link textcolor" to="/">ขั้นตอนการเช่า/เงื่อนไข</NavLink></li>
+                <li className="nav-item"><NavLink className="nav-link textcolor" to="/Howtorent">ขั้นตอนการเช่า/เงื่อนไข</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/About">ติดต่อเรา</NavLink></li>
             </ul>
   </div>
