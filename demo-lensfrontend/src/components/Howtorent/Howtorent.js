@@ -5,8 +5,8 @@ import './Howtorent.css'
 const howtorent = (props) => (
     <div>
         <div className="card header">
-            <h4 className="card-title text-info textcenter">How to Work</h4>
-            <hr /><br />
+            <h3 className="card-title text-info textcenter">How to Work</h3>
+            <hr />
             <div className="row">
                 <div className="col-lg-3">
                     <div className="card text-white bg-secondary">
@@ -46,6 +46,13 @@ const howtorent = (props) => (
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div className="card header">
+            <h3 className="card-title text-info textcenter">How to Work</h3>
+            <hr />
+            <div className="row">
+            
             </div>
         </div>
     </div>
