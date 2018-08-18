@@ -5,7 +5,7 @@ import './Howtorent.css'
 const howtorent = (props) => (
     <div>
         <div className="card header">
-            <h4 className="card-title text-info">How to Work</h4>
+            <h4 className="card-title text-info textcenter">How to Work</h4>
             <hr /><br />
             <div className="row">
                 <div className="col-lg-3">
