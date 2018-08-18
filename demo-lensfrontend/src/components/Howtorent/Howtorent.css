@@ -1,0 +1,11 @@
+i.size {
+    font-size: 48px;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.card-body.height {
+    height: 320px;
+}
