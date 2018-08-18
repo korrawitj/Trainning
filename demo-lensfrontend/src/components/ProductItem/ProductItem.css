@@ -1,0 +1,20 @@
+.row {
+    display: inline-block;
+   
+    margin: 20px;
+   
+ }
+ .rows {
+     display: inline-block;
+  
+ }
+ .image-box{
+   background-color:#eae9e9;
+   border-color: darkblue;
+ }
+
+
+.search-control{
+    margin: 20px;
+}
+

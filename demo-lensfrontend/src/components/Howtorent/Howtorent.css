@@ -1,0 +1,18 @@
+i.size {
+    font-size: 48px;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.card-body.height {
+    height: 320px;
+}
+
+.card.header {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}

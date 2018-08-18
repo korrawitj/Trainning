@@ -1,66 +1,53 @@
 import React from 'react';
-const Howtorent = (props) => (
-    <div>
-        <div><h3>How it works?</h3></div>
-        <div className="row">
-            <div style={{ paddingLeft: "10%" }}></div>
-            <div className="col-md-2" style={{ fontSize: "10px" }}>
-                <u>1. ลงทะเบียนผ่านเว็บไซต์</u>
-                <p>สมัครสมาชิก กรอกข้อมูลเพิ่มเติมให้ครบถ้วน</p>
-    </div>
-            <div className="col-md-2" style={{ fontSize: "10px" }}>
-                <u>2. อัพโหลดเอกสาร</u>
-                <p>(กรณีเช่าแบบที่ 1)</p>
-                <p>กรณีเช่าแบบที่ 1 อัพโหลดเอกสารผ่านเว็บ ถ่ายรูปหรือ Scan ก็ได้ </p>
-                <p>กรณีเช่าแบบที่ 2 ไม่ต้องส่งเอกสารเพิ่มรายการจองได้เลย</p>
-    </div>
-            <div className="col-md-2" style={{ fontSize: "10px" }}>
-                <u>3. ทำรายการจอง</u>
-                <p>เลือกอุปกรณ์ วันรับคืน เช็คคิว และเพิ่มรายการจอง</p>
-    </div>
-            <div className="col-md-2" style={{ fontSize: "10px" }}>
-                <u>4. รอทางร้านโทรติดต่อกลับในเวลาทำการ</u>
-                <p>หลังจากรายการเข้ามาในระบบแล้ว จะมีเจ้าหน้าที่โทรติดต่อกลับทุกชั่วโมงในเวลาทำการ</p>
-    </div>
-            <div className="col-md-2" style={{ fontSize: "10px" }}>
-                <u>5. รับ-คืนอุปกรณ์ที่หน้าร้าน BTS ราชเทวี</u>
-                <p>รับ-คืนอุปกรณ์ตามวัน เวลาระบุด้วยตัวเอง ชำระค่าเช่าและหลักประกันในวันรับของทั้งหมด</p>
-    </div>
-        </div>
-        <div><h3>รูปแบบ / ขั้นตอนการเช่า</h3></div>
-        <div className="row">
-            <div className="col-md-4" style={{ fontSize: "10px" }}>
-            <p>แบบที่ 1</p>
-            <p>ส่งเอกสาร
-            วางหลักประกันอุปกรณ์ระหว่างเช่า
-            (ลดลงจากแบบที่ 2 ประมาณ 30-40%)
-            ใช้เอกสาร 3 รายการ
-            กรณีเช่าอุปกรณ์ที่ต้องวางหลักประกัน ไม่ต้องวางบัตรตัวจริงระหว่างเช่า
-            อยู่ในกรุงเทพฯ หรือปริมณฑล
-            แบบที่ 1 ใช้เอกสาร 3 รายการ เมื่อส่งเอกสารทำรายการจองแล้ว ทางร้านโทรจะแจ้งมูลค่าหลักค้ำประกันที่ต้องวางไว้ ระหว่างเช่าใน Rate ที่ทางร้านกำหนด มูลค่าหลักประกันแบบที่ 1 จะลดลงจากแบบที่ 2 ประมาณ 30-40%
-            </p>
-    </div>
-            <div className="col-md-4" style={{ fontSize: "10px" }}>
-                <u>2. อัพโหลดเอกสาร</u>
-                (กรณีเช่าแบบที่ 1)
-                กรณีเช่าแบบที่ 1 อัพโหลดเอกสารผ่านเว็บ ถ่ายรูปหรือ Scan ก็ได้ กรณีเช่าแบบที่ 2 ไม่ต้องส่งเอกสารเพิ่มรายการจองได้เลย
-    </div>
-            <div className="col-md-4" style={{ fontSize: "10px" }}>
-                สำเนาบัตรประชาชน
-            สำเนาทะเบียนบ้าน
-            เอกสารยืนยันที่อยู่ปัจจุบัน 1 รายการ เช่น
-            (เลือก 1 รายการ) *
-            ใบแจ้งค่าน้ำค่าไฟ
-            ใบแจ้งค่าโทรศัพท์มือถือ
-            ใบแจ้งค่าอินเตอร์เน็ต
-            ใบแจ้งค่าบัตรเครดิต
-            ใบแจ้งประกันชีวิต
-            ใบแจ้งอื่นๆ ที่ตรงตามเงื่อนไขทางร้าน
-            * เอกสารยืนยันที่อยู่ เป็นเอกสารที่ไปรษณีย์ส่งมาที่บ้านทุกๆเดือน ที่มี ชื่อที่ตรงกัน และ มีที่อยู่ปัจจุบัน อยู่ในเอกสารนั้น ที่อยู่ไม่จำเป็นต้องตรงกับทะเบียนบ้าน เช่นใบแจ้งค่าอินเตอร์เน็ต,ค่าโทรศัพท์,ค่าน้ำ,ค่าไฟ,ใบแจ้งค่าบัตรเครดิต เอกสารย้อนหลังได้ไม่เกิน 3 เดือน และมี ที่อยู่ๆในกรุงเทพและปริมฑล เท่านั้น
-            กรณีเอกสารไม่ครบ หรือ ไม่ตรงเงื่อนไขต้องเช่าแบบที่ 2 เท่านั้น
-    </div>
 
+import './Howtorent.css'
+
+const howtorent = (props) => (
+    <div>
+        <div className="card header">
+            <h4 className="card-title text-info">How to Work</h4>
+            <hr /><br />
+            <div className="row">
+                <div className="col-lg-3">
+                    <div className="card text-white bg-secondary">
+                        <div className="card-header"><strong>1. ลงทะเบียนผ่านเว็บไซต์</strong></div>
+                        <div className="card-body height">
+                            <div className="textcenter"><i className="fa fa-keyboard-o size"></i></div><br />
+                            <p className="card-text">สมัครสมาชิก กรอกข้อมูลเพิ่มเติมให้ครบถ้วน</p>
+                            <p className="card-text"><u>กรณีเช่าแบบที่ 1</u> อัพโหลดเอกสารผ่านเว็บ ถ่ายรูปหรือ Scan ก็ได้ กรณีเช่าแบบที่ 2 ไม่ต้องส่งเอกสารเพิ่มรายการจองได้เลย</p>
+                            <p className="card-text"><u>กรณีเช่าแบบที่ 2</u> ไม่ต้องส่งเอกสารเพิ่มรายการจองได้เลย</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-3">
+                    <div className="card bg-light">
+                        <div className="card-header"><strong>2. ทำรายการจอง</strong></div>
+                        <div className="card-body height">
+                            <div className="textcenter"><i className="fa fa-book size"></i></div><br />
+                            <p className="card-text">เลือกอุปกรณ์ วันรับคืน เช็คคิว และเพิ่มรายการจอง</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-3">
+                    <div className="card text-white bg-secondary">
+                        <div className="card-header"><strong>3. รอทางร้านโทรติดต่อกลับ</strong></div>
+                        <div className="card-body height">
+                            <div className="textcenter"><i className="	fa fa-phone size"></i></div><br />
+                            <p className="card-text">หลังจากรายการเข้ามาในระบบแล้ว จะมีเจ้าหน้าที่โทรติดต่อกลับทุกชั่วโมงในเวลาทำการ</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-3">
+                    <div className="card bg-light">
+                        <div className="card-header"><strong>4. รับ-คืนอุปกรณ์ที่หน้าร้าน</strong></div>
+                        <div className="card-body height">
+                            <div className="textcenter"><i className="fa fa-camera size"></i></div><br />
+                            <p className="card-text">รับ-คืนอุปกรณ์ตามวัน เวลาระบุด้วยตัวเอง ชำระค่าเช่าและหลักประกันในวันรับของทั้งหมด</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 )
-export default Howtorent;
+export default howtorent;
