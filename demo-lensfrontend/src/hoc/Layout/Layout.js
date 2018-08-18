@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Children from '../Children/Children';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
+import Footer from '../../components/Navigation/Footer/Footer';
 // import classes from './Layout.css';
 
 class Layout extends Component {
@@ -14,6 +15,7 @@ class Layout extends Component {
                         {this.props.children}
                     </main>
                 </div>
+                <Footer />
             </Children>
         );
     }
