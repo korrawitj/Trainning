@@ -23,27 +23,27 @@ class ProductItemDetail extends Component {
                                             <div className="fslider">
                                                 <div className="flexslider">
                                                     <div className="flex-viewport">
-                                                        <img src={CameraPicture}></img>
+                                                        <img src={CameraPicture} alt="Logo"  />
                                                     </div>
                                                 </div>
                                                 <ol className="flex-control-nav flex-control-thumbs">
                                                     <li>
-                                                        <img src={CameraPicture3}></img>
+                                                        <img src={CameraPicture3} alt="Logo" />
                                                     </li>
                                                     <li>
-                                                        <img src={CameraPicture}></img>
+                                                        <img src={CameraPicture} alt="Logo" />
                                                     </li>
                                                     <li>
-                                                        <img src={CameraPicture3}></img>
+                                                        <img src={CameraPicture3} alt="Logo" />
                                                     </li>
                                                     <li>
-                                                        <img src={CameraPicture}></img>
+                                                        <img src={CameraPicture} alt="Logo" />
                                                     </li>
                                                     <li>
-                                                        <img src={CameraPicture3}></img>
+                                                        <img src={CameraPicture3} alt="Logo" />
                                                     </li>
                                                     <li>
-                                                        <img src={CameraPicture}></img>
+                                                        <img src={CameraPicture} alt="Logo" />
                                                     </li>
                                                 </ol>
                                             </div>
@@ -124,14 +124,14 @@ class ProductItemDetail extends Component {
                                                 <div className="oc-item">
                                                     <div className="product iproduct clearfix">
                                                         <div className="product-image">
-                                                            <a href="#"><img src={CameraPicture3} alt="Light Blue Denim Dress" /></a>
+                                                            <a ><img src={CameraPicture3} alt="Light Blue Denim Dress" /></a>
                                                             <div className="product-overlay">
-                                                                <a href="#" class="add-to-cart"><i className="icon-shopping-cart"></i><span> Add to Cart</span></a>
+                                                                <a  class="add-to-cart"><i className="icon-shopping-cart"></i><span> Add to Cart</span></a>
                                                                 <a href="include/ajax/shop-item.html" className="item-quick-view" data-lightbox="ajax"><i className="icon-zoom-in2"></i><span> Quick View</span></a>
                                                             </div>
                                                         </div>
                                                         <div className="product-desc center">
-                                                            <div className="product-title"><h3><a href="#">Light Blue Denim Dress</a></h3></div>
+                                                            <div className="product-title"><h3><a >Light Blue Denim Dress</a></h3></div>
                                                             <div className="product-price">$19.95</div>
                                                         </div>
                                                     </div>
@@ -142,14 +142,14 @@ class ProductItemDetail extends Component {
                                                 <div className="oc-item">
                                                     <div className="product iproduct clearfix">
                                                         <div className="product-image">
-                                                            <a href="#"><img src={CameraPicture3} alt="Light Blue Denim Dress" /></a>
+                                                            <a ><img src={CameraPicture3} alt="Light Blue Denim Dress" /></a>
                                                             <div className="product-overlay">
-                                                                <a href="#" class="add-to-cart"><i className="icon-shopping-cart"></i><span> Add to Cart</span></a>
+                                                                <a  class="add-to-cart"><i className="icon-shopping-cart"></i><span> Add to Cart</span></a>
                                                                 <a href="include/ajax/shop-item.html" className="item-quick-view" data-lightbox="ajax"><i className="icon-zoom-in2"></i><span> Quick View</span></a>
                                                             </div>
                                                         </div>
                                                         <div className="product-desc center">
-                                                            <div className="product-title"><h3><a href="#">Light Blue Denim Dress</a></h3></div>
+                                                            <div className="product-title"><h3><a >Light Blue Denim Dress</a></h3></div>
                                                             <div className="product-price">$19.95</div>
                                                         </div>
                                                     </div>
