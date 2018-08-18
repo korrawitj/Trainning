@@ -1,0 +1,22 @@
+.portfolio-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 2;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+}
+.imgcard{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+}
+@media (min-width: 768px)
+{
+    .imgcard{
+        max-width: 33%;
+    }
+}
