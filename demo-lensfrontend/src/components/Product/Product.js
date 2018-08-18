@@ -63,17 +63,18 @@ class Product extends Component {
                         <span>ค้นหาสินค้าที่ต้องการ</span>
                     </div>
                     <div className="container">
-                        <form class="form-inline">
-                            <label className="sr-only" for="inlineFormInput">Name</label>
-                            <input type="text" className="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Jane Doe" />
+                        <form className="form-inline">
+                            <label className="mr-sm-2" for="inlineFormInput">ชื่อสินค้า</label>
+                            <input type="text" className="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="--กรุณากรอกชื่อสินค้า--" />
+                            <label className="mr-sm-2" for="inlineFormCustomSelect">ยีห้อ</label>
                             <select className="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
-                                <option value="">-- Select One --</option>
+                                <option value="">-- เลือกยีห้อ --</option>
                                 <option value="Wordpress">Canon</option>
-                                <option value="PHP / MySQL">FUJI / MySQL</option>
+                                <option value="PHP / MySQL">FUJI</option>
                                 <option value="HTML5 / CSS3">Nikon</option>
                                 <option value="Graphic Design">Olimpus</option>
                             </select>
-                            <button type="submit" className="btn btn-primary">Submit</button>
+                            <button type="submit" className="btn btn-primary">ค้นหา</button>
                         </form>
                     </div>
 
@@ -108,16 +109,29 @@ class Product extends Component {
                         </div>
                     </div>
                 </section>
-                <section>
-                    <ul className="pagination">
-                        <li className="page-item"><a className="page-link" href="#">«</a></li>
-                        <li className="page-item"><a className="page-link" href="#">1</a></li>
-                        <li className="page-item"><a className="page-link" href="#">2</a></li>
-                        <li className="page-item"><a className="page-link" href="#">3</a></li>
-                        <li className="page-item"><a className="page-link" href="#">4</a></li>
-                        <li className="page-item"><a className="page-link" href="#">5</a></li>
-                        <li className="page-item"><a className="page-link" href="#">»</a></li>
-                    </ul>
+                <section className="container">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <div className="container">
+                                <ul className="pagination">
+                                    <li className="page-item"><a className="page-link" href="#">«</a></li>
+                                    <li className="page-item"><a className="page-link" href="#">1</a></li>
+                                    <li className="page-item"><a className="page-link" href="#">2</a></li>
+                                    <li className="page-item"><a className="page-link" href="#">3</a></li>
+                                    <li className="page-item"><a className="page-link" href="#">4</a></li>
+                                    <li className="page-item"><a className="page-link" href="#">5</a></li>
+                                    <li className="page-item"><a className="page-link" href="#">6</a></li>
+                                    <li className="page-item"><a className="page-link" href="#">7</a></li>
+                                    <li className="page-item"><a className="page-link" href="#">8</a></li>
+                                    <li className="page-item"><a className="page-link" href="#">9</a></li>
+                                    <li className="page-item"><a className="page-link" href="#">10</a></li>
+                                    <li className="page-item"><a className="page-link" href="#">»</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
 
                 </section>
 
