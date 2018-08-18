@@ -5,7 +5,7 @@ import './Footer.css';
 const footer = (props) => (
     <div className="Footer">
         <div className="footers" style={{ marginBottom: '0' }}>
-        <div className="row">
+        <div className="row" style={{marginBottom: '0'}}>
             <div className="col-md-4">
                     <p><NavLink  exact to="/" className="white">กล้อง เลนส์ ทั้งหมด</NavLink></p>
                     <p><NavLink  exact to="/" className="white">กล้อง เลนส์ DSLR</NavLink></p>
@@ -27,7 +27,7 @@ const footer = (props) => (
             <p>เช่าเกิน 7 วันลดราคาพิเศษคำนวนได้จากในระบบ</p>
             </div>
             <div className="col-md-4">
-            <i className="icon-facebook"></i>
+            <div className="fb-page" data-href="https://www.facebook.com/lenslineup/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/lenslineup/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lenslineup/">ให้เช่ากล้องเลนส์ DSLR Mirrorless GoPro - ร้าน Lenslineup.com</a></blockquote></div>
             </div>
             </div>
         </div>
