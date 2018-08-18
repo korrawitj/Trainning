@@ -10,7 +10,7 @@ class Layout extends Component {
         return (
             <Children>
                 <Toolbar />
-                <div className="container-fluid" style={{ marginTop: '100px', paddingBottom: '100px' }}>
+                <div className="container-fluid" style={{ marginTop: '80px' }}>
                     <main>
                         {this.props.children}
                     </main>

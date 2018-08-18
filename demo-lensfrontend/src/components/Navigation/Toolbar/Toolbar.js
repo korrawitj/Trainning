@@ -12,10 +12,10 @@ const toolbar = (props) => (
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item"><NavLink className="nav-link textcolor" exact to="/">หน้าหลัก</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/AllProduct">รายการทั้งหมด</NavLink></li>
-                <li className="nav-item"><NavLink className="nav-link textcolor" to="/">DSLR</NavLink></li>
-                <li className="nav-item"><NavLink className="nav-link textcolor" to="/">Mirrorless</NavLink></li>
+                <li className="nav-item"><a className="nav-link" disabled>DSLR</a></li>
+                <li className="nav-item"><a className="nav-link" disabled>Mirrorless</a></li>
                 <li className="nav-item"><a className="nav-link textcolor" href="https://www.goprolineup.com/">GoPro</a></li>
-                <li className="nav-item"><NavLink className="nav-link textcolor" to="/">วีดีโอ</NavLink></li>
+                <li className="nav-item"><a className="nav-link" disabled>วีดีโอ</a></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/Howtorent">ขั้นตอนการเช่า/เงื่อนไข</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/About">ติดต่อเรา</NavLink></li>
                 <li className="nav-item"><NavLink to="/Login" className="btn btn-outline-primary">เข้าสู่ระบบ</NavLink></li>
