@@ -20,8 +20,19 @@ nav {
     height: auto;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:900px) {
     .logo {
        display: none;
     }
+    .navbar.navbar-expand-sm.navbar-light.fixed-top.main {
+        display: none;
+    }
+    .navbar.navbar-light.fixed-top.burger{
+        display: flex;
+    }
   } 
+  @media only screen and (min-width:900px) {
+    .navbar.navbar-light.fixed-top.burger{
+        display: none;
+    }
+  }
