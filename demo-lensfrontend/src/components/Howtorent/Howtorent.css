@@ -16,3 +16,7 @@ i.size {
     padding-right: 10px;
     padding-bottom: 10px;
 }
+
+li.pad {
+    margin: 11px;
+}
