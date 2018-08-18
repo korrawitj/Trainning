@@ -2,6 +2,7 @@ import React from 'react';
 
 import swiper from '../../assets/images/swiper/2.jpg';
 import './About.css'
+import addline from '../../assets/images/addline.png';
 
 const about = (props) => (
     <div style={{ marginTop: '80px' }}>
@@ -23,9 +24,10 @@ const about = (props) => (
             <div className="container clear-bottommargin clearfix">
             <div className="row clearfix">
             <div className="col-md-6" style={{textAlign:"center"}}>
-            แผนที่ตั้งร้าน</div>
+            <h3>แผนที่ตั้งร้าน</h3>
+            </div>
             <div className="col-md-6" style={{textAlign:"center"}}>
-            รายละเอียด
+            <h3>รายละเอียด</h3>
             </div>
                 <div className="col-md-6">
                 <div style={{marginBottom:"40px"}}>
@@ -46,10 +48,13 @@ const about = (props) => (
 วันจันทร์-เสาร์ 11.30น.- 19.00น. หยุดวันอาทิตย์
 02-611-0695,080-818-8872,080-818-8873,080-818-8874
 Email : lenslineuprental@gmail.com
-website : www.lenslineup.com
-facebook : www.facebook.com/lenslineup
+website :`}  <a href="https:www.lenslineup.com">www.lenslineup.com</a>
+{`
+facebook :`} <a href="https:www.facebook.com/lenslineup">www.facebook.com/lenslineup</a>
+{`
 Line ID : @lenslineup
-                `}
+`}
+<a href="https://line.me/R/ti/p/%40zmb4858w"><img src={addline} alt="addline" style={{width:"120px"}}/></a>
                 </div>
             </div>
         </div>
