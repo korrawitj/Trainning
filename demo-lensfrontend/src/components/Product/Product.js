@@ -109,3 +109,22 @@ class Product extends Component {
                         </div>
                     </div>
                 </section>
+                <section>
+                    <ul className="pagination">
+                        <li className="page-item"><a className="page-link" >«</a></li>
+                        <li className="page-item"><a className="page-link" >1</a></li>
+                        <li className="page-item"><a className="page-link" >2</a></li>
+                        <li className="page-item"><a className="page-link" >3</a></li>
+                        <li className="page-item"><a className="page-link" >4</a></li>
+                        <li className="page-item"><a className="page-link" >5</a></li>
+                        <li className="page-item"><a className="page-link" >»</a></li>
+                    </ul>
+
+                </section>
+
+            </div>
+        );
+    }
+}
+
+export default Product;
