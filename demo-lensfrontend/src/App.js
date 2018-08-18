@@ -7,8 +7,8 @@ import Login from './components/Login/Login';
 import Blog from './containers/Blog/Blog';
 import About from './components/About/About';
 import Howtorent from './components/Howtorent/Howtorent';
-import Product from './components/Product/Product'
-import ProductItemDetail from './components/ProductItemDetail/ProductItemDetail'
+import Product from './components/Product/Product';
+import ProductItemDetail from './components/ProductItemDetail/ProductItemDetail';
 
 class App extends Component {
   render() {

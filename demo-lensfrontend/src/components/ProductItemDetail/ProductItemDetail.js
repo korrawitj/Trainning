@@ -105,7 +105,7 @@ class ProductItemDetail extends Component {
                                                         <li><i ></i><h6>กระเป๋ากล้อง</h6></li>
                                                         <li><i ></i><h6>แท่นชาร์ตแบตเตอรี่</h6></li>
                                                         <li><i ></i><h6>SD Card Sandisk Extreme PRO 64GB 95Mb/s</h6></li>
-                                                        
+
                                                     </ul>
                                                 </div>
                                             </div>

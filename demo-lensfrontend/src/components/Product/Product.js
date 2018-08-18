@@ -109,6 +109,7 @@ class Product extends Component {
                         </div>
                     </div>
                 </section>
+<<<<<<< HEAD
                 <section className="container">
                     <div class="row">
                         <div class="col-3"></div>
@@ -132,6 +133,18 @@ class Product extends Component {
                         </div>
                         <div class="col-3"></div>
                     </div>
+=======
+                <section>
+                    <ul className="pagination">
+                        <li className="page-item"><a className="page-link" >«</a></li>
+                        <li className="page-item"><a className="page-link" >1</a></li>
+                        <li className="page-item"><a className="page-link" >2</a></li>
+                        <li className="page-item"><a className="page-link" >3</a></li>
+                        <li className="page-item"><a className="page-link" >4</a></li>
+                        <li className="page-item"><a className="page-link" >5</a></li>
+                        <li className="page-item"><a className="page-link" >»</a></li>
+                    </ul>
+>>>>>>> 9f2921b746073780877d81965e7c621f838fcf3a
 
                 </section>
 
