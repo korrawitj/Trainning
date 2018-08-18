@@ -1,0 +1,17 @@
+div.dark {
+	color: #CCC;
+    background-color: rgba(0, 0, 0, 0.753);
+    text-align: center;
+    color:rgba(255,255,255,0.25);
+    font-size: 14px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+.footers{
+    background-color:#2d2d2d;
+    color:#DDDDDD;
+    padding-top: 1%;
+}
+a.white{
+    margin-left: 10%;
+    color:#DDDDDD;
+}
