@@ -11,7 +11,7 @@ const toolbar = (props) => (
             </NavLink>
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item"><NavLink className="nav-link textcolor" exact to="/">หน้าหลัก</NavLink></li>
-                <li className="nav-item"><NavLink className="nav-link textcolor" to="/">รายการทั้งหมด</NavLink></li>
+                <li className="nav-item"><NavLink className="nav-link textcolor" to="/AllProduct">รายการทั้งหมด</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/">DSLR</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/">Mirrorless</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/">GoPro</NavLink></li>
