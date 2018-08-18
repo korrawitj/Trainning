@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CameraPicture from '../../assets/Canon-5d-Mark-IV-500x500.png'
-import CameraPicture2 from '../../assets/rx0-500x500.png'
+// import CameraPicture2 from '../../assets/rx0-500x500.png'
 import CameraPicture3 from '../../assets/sony-a7riii-upper-500x500.png'
 import './ProductItemDetail.css'
 import '../../assets/canvas/style.css'
