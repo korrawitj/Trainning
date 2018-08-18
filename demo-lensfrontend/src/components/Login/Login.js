@@ -34,7 +34,7 @@ class Login extends Component {
                     <input type="checkbox" className="form-check-input"/>
                     <label className="form-check-label">จดจำฉัน</label>
                 </div>
-                <button class="btn btn-primary">เข้าสู่ระบบ</button>
+                <button className="btn btn-primary">เข้าสู่ระบบ</button>
             </div>
         );
     }
