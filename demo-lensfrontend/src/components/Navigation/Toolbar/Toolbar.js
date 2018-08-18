@@ -14,7 +14,7 @@ const toolbar = (props) => (
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/AllProduct">รายการทั้งหมด</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/">DSLR</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/">Mirrorless</NavLink></li>
-                <li className="nav-item"><NavLink className="nav-link textcolor" to="/">GoPro</NavLink></li>
+                <li className="nav-item"><a className="nav-link textcolor" href="https://www.goprolineup.com/">GoPro</a></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/">วีดีโอ</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/Howtorent">ขั้นตอนการเช่า/เงื่อนไข</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/About">ติดต่อเรา</NavLink></li>
@@ -41,10 +41,10 @@ const toolbar = (props) => (
         <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
                 <li className="nav-item"><NavLink className="nav-link textcolor" exact to="/">หน้าหลัก</NavLink></li>
-                <li className="nav-item"><NavLink className="nav-link textcolor" to="/">รายการทั้งหมด</NavLink></li>
+                <li className="nav-item"><NavLink className="nav-link textcolor" to="/AllProduct">รายการทั้งหมด</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/">DSLR</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/">Mirrorless</NavLink></li>
-                <li className="nav-item"><NavLink className="nav-link textcolor" to="/">GoPro</NavLink></li>
+                <li className="nav-item"><a className="nav-link textcolor" href="https://www.goprolineup.com/">GoPro</a></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/">วีดีโอ</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/Howtorent">ขั้นตอนการเช่า/เงื่อนไข</NavLink></li>
                 <li className="nav-item"><NavLink className="nav-link textcolor" to="/About">ติดต่อเรา</NavLink></li>

@@ -27,7 +27,7 @@ const footer = (props) => (
             <p>เช่าเกิน 7 วันลดราคาพิเศษคำนวนได้จากในระบบ</p>
             </div>
             <div className="col-md-4">
-            <div className="fb-page" data-href="https://www.facebook.com/lenslineup/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/lenslineup/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lenslineup/">ให้เช่ากล้องเลนส์ DSLR Mirrorless GoPro - ร้าน Lenslineup.com</a></blockquote></div>
+            <div className="fb-page" data-href="https://www.facebook.com/lenslineup/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/lenslineup/" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lenslineup/">ให้เช่ากล้องเลนส์ DSLR Mirrorless GoPro - ร้าน Lenslineup.com</a></blockquote></div>
             </div>
             </div>
         </div>
