@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import HomeLogo from '../../../assets/images/LogoHere.jpg';
+import HomeLogo from '../../../assets/images/logo-final-2x.png';
 import './Toolbar.css';
 const toolbar = (props) => (
     <header>
@@ -17,10 +17,14 @@ const toolbar = (props) => (
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            <a className="nav-item nav-link active">Home <span className="sr-only">(current)</span></a>
-                            <a className="nav-item nav-link">Features</a>
-                            <a className="nav-item nav-link"> Pricing</a>
-                            <a className="nav-item nav-link disabled" >Disabled</a>
+                            <NavLink className="nav-item nav-link" exact to="/">หน้าหลัก</NavLink>
+                            <NavLink className="nav-item nav-link" to="/">รายการทั้งหมด</NavLink>
+                            <NavLink className="nav-item nav-link" to="/">DSLR</NavLink>
+                            <NavLink className="nav-item nav-link" to="/">Mirrorless</NavLink>
+                            <NavLink className="nav-item nav-link" to="/">GoPro</NavLink>
+                            <NavLink className="nav-item nav-link" to="/">วีดีโอ</NavLink>
+                            <NavLink className="nav-item nav-link" to="/">ขั้นตอนการเช่า/เงื่อนไข</NavLink>
+                            <NavLink className="nav-item nav-link" to="/About">ติดต่อเรา</NavLink>
                         </div>
                     </div>
                 </nav>
