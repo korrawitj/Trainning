@@ -63,8 +63,8 @@ class Product extends Component {
                         <span>ค้นหาสินค้าที่ต้องการ</span>
                     </div>
                     <div className="container">
-                        <form class="form-inline">
-                            <label className="sr-only" for="inlineFormInput">Name</label>
+                        <form className="form-inline">
+                            <label className="sr-only">Name</label>
                             <input type="text" className="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Jane Doe" />
                             <select className="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
                                 <option value="">-- Select One --</option>
@@ -110,13 +110,13 @@ class Product extends Component {
                 </section>
                 <section>
                     <ul className="pagination">
-                        <li className="page-item"><a className="page-link" href="#">«</a></li>
-                        <li className="page-item"><a className="page-link" href="#">1</a></li>
-                        <li className="page-item"><a className="page-link" href="#">2</a></li>
-                        <li className="page-item"><a className="page-link" href="#">3</a></li>
-                        <li className="page-item"><a className="page-link" href="#">4</a></li>
-                        <li className="page-item"><a className="page-link" href="#">5</a></li>
-                        <li className="page-item"><a className="page-link" href="#">»</a></li>
+                        <li className="page-item"><a className="page-link" >«</a></li>
+                        <li className="page-item"><a className="page-link" >1</a></li>
+                        <li className="page-item"><a className="page-link" >2</a></li>
+                        <li className="page-item"><a className="page-link" >3</a></li>
+                        <li className="page-item"><a className="page-link" >4</a></li>
+                        <li className="page-item"><a className="page-link" >5</a></li>
+                        <li className="page-item"><a className="page-link" >»</a></li>
                     </ul>
 
                 </section>
