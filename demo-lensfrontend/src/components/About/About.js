@@ -15,11 +15,44 @@ const about = (props) => (
                 <div className="item active">
                     <img src={swiper} alt="LensLineUp" style={{ width: '100%' }} />
                     <div className="carousel-caption">
-                        <h3>LensLineUp</h3>
-                        <p>ติดต่อเรา</p>
+                        <h1>LensLineUp</h1>
+                        <h1>ติดต่อเรา</h1>
                     </div>
                 </div>
             </div>
+            <div className="container clear-bottommargin clearfix">
+            <div className="row clearfix">
+            <div className="col-md-6" style={{textAlign:"center"}}>
+            แผนที่ตั้งร้าน</div>
+            <div className="col-md-6" style={{textAlign:"center"}}>
+            รายละเอียด
+            </div>
+                <div className="col-md-6">
+                <div style={{marginBottom:"40px"}}>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.4569636752017!2d100.52912231474906!3d13.75129420101033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ecb5f62dbef%3A0x5065c1ddaa6c5b85!2z4Lij4LmJ4Liy4LiZIGxlbnNsaW5ldXAg4LmD4Lir4LmJ4LmA4LiK4LmI4Liy4LiB4Lil4LmJ4Lit4LiH4LiW4LmI4Liy4Lii4Lij4Li54LibIOC5gOC4iuC5iOC4suC5gOC4peC4meC4quC5jCB8IERTTFIgTUlSUk9STEVTUyBHT1BSTw!5e0!3m2!1sth!2sth!4v1534498389371" 
+                width="100%"  
+                frameBorder="0" 
+                style={{border:"0",height:"450px"}}
+                title="Map" 
+                allowFullScreen>
+                </iframe>
+                </div>
+                </div>
+                <div className="col-md-6" style={{whiteSpace:"pre-wrap",textAlign:"left"}}>
+                {`ร้าน Lenslineup 
+ให้เช่ากล้อง เลนส์ DSLR กล้อง GoPro 
+ให้เช่ากล้อง Mirrorless และอุปกรณ์ถ่ายภาพ
+ชั้น 2 ตึกฟรอนเทจ หน้าโรงแรมเอเชีย ติด BTS ราชเทวี
+วันจันทร์-เสาร์ 11.30น.- 19.00น. หยุดวันอาทิตย์
+02-611-0695,080-818-8872,080-818-8873,080-818-8874
+Email : lenslineuprental@gmail.com
+website : www.lenslineup.com
+facebook : www.facebook.com/lenslineup
+Line ID : @lenslineup
+                `}
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 );
