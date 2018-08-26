@@ -107,7 +107,7 @@
 @media (max-width: 768px)
 {
     .imgcard{
-		max-width: 33%!important;
+		max-width: 50%!important;
 		max-height: 5rem !important;
 	}
 	.imgcard img{
@@ -116,6 +116,16 @@
 	}
 	h4 p{
 		font-size:12px;
+	}
+	.carousel-inner {
+		position: relative;
+		width: 100%!important;
+		height: auto!important;
+		overflow: hidden;
+	}
+	.carousel-item.active img{
+		width:auto;
+		height: auto;
 	}
 }
 @media (min-width: 768px)
