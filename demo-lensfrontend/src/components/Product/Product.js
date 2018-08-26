@@ -109,30 +109,6 @@ class Product extends Component {
                         </div>
                     </div>
                 </section>
-                <section className="container">
-                    <div className="row">
-                        <div className="col-3"></div>
-                        <div className="col-6">
-                            <div className="container">
-                                <ul className="pagination">
-                                    <li className="page-item"><a className="page-link" >«</a></li>
-                                    <li className="page-item"><a className="page-link" >1</a></li>
-                                    <li className="page-item"><a className="page-link" >2</a></li>
-                                    <li className="page-item"><a className="page-link" >3</a></li>
-                                    <li className="page-item"><a className="page-link" >4</a></li>
-                                    <li className="page-item"><a className="page-link" >5</a></li>
-                                    <li className="page-item"><a className="page-link" >6</a></li>
-                                    <li className="page-item"><a className="page-link" >7</a></li>
-                                    <li className="page-item"><a className="page-link" >8</a></li>
-                                    <li className="page-item"><a className="page-link" >9</a></li>
-                                    <li className="page-item"><a className="page-link" >10</a></li>
-                                    <li className="page-item"><a className="page-link" >»</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-3"></div>
-                    </div>
-                </section>
             </div>
         );
     }
