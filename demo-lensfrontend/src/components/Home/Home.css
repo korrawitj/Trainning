@@ -104,9 +104,27 @@
 	transition-delay: .2s;
 }
 
-@media (min-width: 768px)
+@media (max-width: 768px)
 {
     .imgcard{
-        max-width: 33%;
-    }
+		max-width: 33%!important;
+		max-height: 5rem !important;
+	}
+	.imgcard img{
+		width:auto;
+		height: auto;
+	}
+	h4 p{
+		font-size:12px;
+	}
+}
+@media (min-width: 768px)
+{
+	.imgcard{
+		max-width: 33%!important;
+	}
+	.imgcard img{
+		width:auto;
+		height: auto;
+	}
 }
