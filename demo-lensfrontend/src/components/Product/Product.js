@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import ProductItem from '../ProductItem/ProductItem'
-import CameraPicture from '../../assets/Canon-5d-Mark-IV-500x500.png'
-import './Product.css'
-import '../../assets/canvas/style.css'
+import ProductItem from '../ProductItem/ProductItem';
+import CameraPicture from '../../assets/Canon-5d-Mark-IV-500x500.png';
+import '../../assets/canvas/style.css';
+import './Product.css';
+
 
 class Product extends Component {
     constructor(props) {
@@ -58,7 +59,7 @@ class Product extends Component {
         return (
             <div className="clearfix ">
                 <section id="page-title">
-                    <div className="container clearfix">
+                    <div className="container clearfix">    
                         <h1>รายการสินค้าทั้งหมด</h1>
                         <span>ค้นหาสินค้าที่ต้องการ</span>
                     </div>
