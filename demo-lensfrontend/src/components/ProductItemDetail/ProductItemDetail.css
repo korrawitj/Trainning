@@ -1,3 +1,19 @@
 div.left {
     text-align: left;
 }
+.shop .product {
+	float: left;
+	width: 25%;
+}
+.product-image {
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+@media only screen and (max-width:768px) {
+    .shop .product {
+        float: left;
+        width: 50%;
+    }
+  } 
