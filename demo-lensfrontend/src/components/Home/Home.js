@@ -26,21 +26,21 @@ const Home = (props) =>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img src={pic1} alt="Los Angeles" width="100%" height="600" />
-                        <div class="carousel-caption">
+                        <div className="carousel-caption">
                             <h1>LensLineUp</h1>
                             <p>ร้านค้า LensLineUp</p>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img src={pic2} alt="Chicago" width="100%" height="600" />
-                        <div class="carousel-caption">
+                        <div className="carousel-caption">
                             <h1>LensLineUp</h1>
                             <p>ร้านค้า LensLineUp</p>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img src={pic3} alt="New York" width="100%" height="600" />
-                        <div class="carousel-caption">
+                        <div className="carousel-caption">
                             <h1>LensLineUp</h1>
                             <p>ร้านค้า LensLineUp</p>
                         </div>
@@ -58,106 +58,106 @@ const Home = (props) =>
                 <div className="row" style={{ margin: "0px", paddingTop: "20px" }}>
 
                     <div className="imgcard">
-                        <div class="hovereffect">
+                        <div className="hovereffect">
                             <div className="portfolio-image">
                                 <img src={canon} alt="pic" height="200px" />
                             </div>
-                            <div class="overlay">
+                            <div className="overlay">
                                 <h2>Canon</h2>
-                                <a class="info" style={{ color: 'white' }}>ดูสินค้า</a>
+                                <a className="info" style={{ color: 'white' }}>ดูสินค้า</a>
                             </div>
                         </div>
                     </div>
 
                     <div className="imgcard">
-                        <div class="hovereffect">
+                        <div className="hovereffect">
                             <div className="portfolio-image">
                                 <img src={nikon} alt="pic" height="200px" />
                             </div>
-                            <div class="overlay">
+                            <div className="overlay">
                                 <h2>Nikon</h2>
-                                <a class="info" style={{ color: 'white' }}>ดูสินค้า</a>
+                                <a className="info" style={{ color: 'white' }}>ดูสินค้า</a>
                             </div>
                         </div>
                     </div>
                     <div className="imgcard">
-                        <div class="hovereffect">
+                        <div className="hovereffect">
                             <div className="portfolio-image">
                                 <img src={sony} alt="pic" height="200px" />
                             </div>
-                            <div class="overlay">
+                            <div className="overlay">
                                 <h2>Sony</h2>
-                                <a class="info" style={{ color: 'white' }}>ดูสินค้า</a>
+                                <a className="info" style={{ color: 'white' }}>ดูสินค้า</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="row" style={{ margin: "0px" }}>
                     <div className="imgcard">
-                        <div class="hovereffect">
+                        <div className="hovereffect">
                             <div className="portfolio-image">
                                 <img src={fuji} alt="pic" height="200px" />
                             </div>
-                            <div class="overlay">
+                            <div className="overlay">
                                 <h2>FujiFlim</h2>
-                                <a class="info" style={{ color: 'white' }}>ดูสินค้า</a>
+                                <a className="info" style={{ color: 'white' }}>ดูสินค้า</a>
                             </div>
                         </div>
                     </div>
                     <div className="imgcard">
-                        <div class="hovereffect">
+                        <div className="hovereffect">
                             <div className="portfolio-image">
                                 <img src={olym} alt="pic" height="200px" />
                             </div>
-                            <div class="overlay">
+                            <div className="overlay">
                                 <h2>Olympus</h2>
-                                <a class="info" style={{ color: 'white' }}>ดูสินค้า</a>
+                                <a className="info" style={{ color: 'white' }}>ดูสินค้า</a>
                             </div>
                         </div>
                     </div>
                     <div className="imgcard">
-                        <div class="hovereffect">
+                        <div className="hovereffect">
                             <div className="portfolio-image">
                                 <img src={gopro} alt="pic" height="200px" />
                             </div>
-                            <div class="overlay">
+                            <div className="overlay">
                                 <h2>GoPro</h2>
-                                <a class="info" style={{ color: 'white' }}>ดูสินค้า</a>
+                                <a className="info" style={{ color: 'white' }}>ดูสินค้า</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="row" style={{ margin: "0px" }}>
                     <div className="imgcard">
-                        <div class="hovereffect">
+                        <div className="hovereffect">
                             <div className="portfolio-image">
                                 <img src={osmo} alt="pic" height="200px" />
                             </div>
-                            <div class="overlay">
+                            <div className="overlay">
                                 <h2>OSMO</h2>
-                                <a class="info" style={{ color: 'white' }}>ดูสินค้า</a>
+                                <a className="info" style={{ color: 'white' }}>ดูสินค้า</a>
                             </div>
                         </div>
                     </div>
                     <div className="imgcard">
-                        <div class="hovereffect">
+                        <div className="hovereffect">
                             <div className="portfolio-image">
                                 <img src={mirrorless} alt="pic" height="200px" />
                             </div>
-                            <div class="overlay">
+                            <div className="overlay">
                                 <h2>Mirrorless</h2>
-                                <a class="info" style={{ color: 'white' }}>ดูสินค้า</a>
+                                <a className="info" style={{ color: 'white' }}>ดูสินค้า</a>
                             </div>
                         </div>
                     </div>
                     <div className="imgcard">
-                        <div class="hovereffect">
+                        <div className="hovereffect">
                             <div className="portfolio-image">
                                 <img src={access} alt="pic" height="200px" />
                             </div>
-                            <div class="overlay">
+                            <div className="overlay">
                                 <h2>Accessories</h2>
-                                <a class="info" style={{ color: 'white' }}>ดูสินค้า</a>
+                                <a className="info" style={{ color: 'white' }}>ดูสินค้า</a>
                             </div>
                         </div>
                     </div>

@@ -2,6 +2,7 @@ import React from 'react';
 // import { NavLink } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import './Footer.css';
+
 const footer = (props) => (
     <div className="Footer">
         <div className="footers" style={{ marginBottom: '0' }}>
@@ -26,7 +27,7 @@ const footer = (props) => (
                     <p>- เช่า 4 วัน จ่าย 3 วัน</p>
                     <p>เช่าเกิน 7 วันลดราคาพิเศษคำนวนได้จากในระบบ</p>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 facebook">
                     <div className="fb-page" data-href="https://www.facebook.com/lenslineup/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/lenslineup/" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lenslineup/">ให้เช่ากล้องเลนส์ DSLR Mirrorless GoPro - ร้าน Lenslineup.com</a></blockquote></div>
                 </div>
             </div>

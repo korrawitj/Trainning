@@ -27,12 +27,12 @@ nav {
     .navbar.navbar-expand-sm.navbar-light.fixed-top.main {
         display: none;
     }
-    .navbar.navbar-light.fixed-top.burger{
+    .navbar.navbar-light.burger{
         display: flex;
     }
   } 
   @media only screen and (min-width:900px) {
-    .navbar.navbar-light.fixed-top.burger{
+    .navbar.navbar-light.burger{
         display: none;
     }
   }

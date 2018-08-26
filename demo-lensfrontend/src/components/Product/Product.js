@@ -130,11 +130,9 @@ class Product extends Component {
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-3"></div>
+                        <div className="col-3"></div>
                     </div>
-
                 </section>
-
             </div>
         );
     }
