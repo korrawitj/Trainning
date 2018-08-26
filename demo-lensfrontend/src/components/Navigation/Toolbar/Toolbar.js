@@ -25,7 +25,7 @@ const toolbar = (props) => (
                 </li>
             </ul>
         </nav>
-        <nav className="navbar navbar-light fixed-top burger"style={{padding:".5rem 2rem 1rem"}}>
+        <nav className="navbar navbar-light burger"style={{padding:".5rem 2rem 1rem"}}>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
         </button>
