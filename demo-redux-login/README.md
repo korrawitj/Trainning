@@ -1,4 +1,6 @@
-# react-redux-registration-login-example
+# Trainning Redux login and authen
+
+FROM ...
 
 React + Redux - User Registration and Login Tutorial & Example
 
