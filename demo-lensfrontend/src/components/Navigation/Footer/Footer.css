@@ -23,6 +23,17 @@ a.white{
         margin-left: 0%;
     }
     .col-md-4.facebook{
-        width:95%;
+        width:100%;
+    }
+    div.col-md-4{
+        position: relative;
+        width: 50%;
+        min-height: 0.5rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        font-size: 9px;
+    }
+    div.dark{
+        font-size: 10px;
     }
   } 

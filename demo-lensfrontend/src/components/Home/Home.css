@@ -111,8 +111,8 @@
 		max-height: 5rem !important;
 	}
 	.imgcard img{
-		width:auto;
-		height: auto;
+		width:auto!important;
+		height: auto!important;
 	}
 	h4 p{
 		font-size:12px;
