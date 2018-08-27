@@ -31,7 +31,7 @@ const footer = (props) => (
                     <div className="fb-page" data-href="https://www.facebook.com/lenslineup/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/lenslineup/" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lenslineup/">ให้เช่ากล้องเลนส์ DSLR Mirrorless GoPro - ร้าน Lenslineup.com</a></blockquote></div>
                 </div>
                 <div className="col-md-4 facebookmb">
-                <div className="fb-page" data-href="https://www.facebook.com/lenslineup/" data-width="180" data-height="70" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+                <div className="fb-page" data-href="https://www.facebook.com/lenslineup/" data-width="180" data-height="70" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/facebook" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
                 </div>
             </div>
         </div>
