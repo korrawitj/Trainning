@@ -15,6 +15,12 @@ a.white{
     margin-left: 10%;
     color:#DDDDDD;
 }
+@media only screen and (min-width:768px) {
+}
+.col-md-4.facebookmb{
+    width:100%;
+    display: none;
+}
 @media only screen and (max-width:768px) {
     .footers{
         padding-left: 10%;
@@ -24,6 +30,12 @@ a.white{
     }
     .col-md-4.facebook{
         width:100%;
+        display: none;
+    }
+    .col-md-4.facebookmb{
+        width:100%;
+        display: flex;
+        padding-bottom: 2rem;
     }
     div.col-md-4{
         position: relative;
@@ -31,9 +43,9 @@ a.white{
         min-height: 0.5rem;
         padding-right: 0.5rem;
         padding-left: 0.5rem;
-        font-size: 9px;
+        font-size: 12px;
     }
     div.dark{
-        font-size: 10px;
+        font-size:12px;
     }
   } 
