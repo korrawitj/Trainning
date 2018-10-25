@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { NavLink } from 'react-router-dom';
 class Login extends Component {
     // state = {
     //     title: '',
@@ -21,7 +21,7 @@ class Login extends Component {
 
     render() {
         return (
-            <div style={{ marginTop: '80px' }}>
+            <div style={{ marginTop: '80px',marginBottom:'80px' }}>
                 <div className="form-group">
                     <label>อีเมล</label>
                     <input type="email" className="form-control" placeholder="Enter email" />
@@ -34,7 +34,10 @@ class Login extends Component {
                     <input type="checkbox" className="form-check-input"/>
                     <label className="form-check-label">จดจำฉัน</label>
                 </div>
-                <button className="btn btn-primary">เข้าสู่ระบบ</button>
+                <div className="form-group">
+                <button className="btn btn-primary" >เข้าสู่ระบบ</button>
+                <NavLink className="btn btn-primary" to="/Register"style={{marginLeft:'5px'}}>สมัครสมาชิก</NavLink>
+                </div>
             </div>
         );
     }
