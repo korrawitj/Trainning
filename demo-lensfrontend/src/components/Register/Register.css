@@ -1,4 +1,22 @@
-.marginDefault{
-margin-top:100px;
-margin-bottom:80px;
+
+@media (max-width:768px){
+    .marginDefault{
+        margin-top:100px;
+        margin-bottom:80px;
+        position: sticky;
+        top: 50%;
+        left: 50%;
+        }
+        .error { border: 1px solid red; }
+}
+@media (min-width:768px){
+    .marginDefault{
+        margin-top:100px;
+        margin-bottom:80px;
+        position: sticky;
+        margin-left: 40%;
+        top: 50%;
+        left: 50%;
+    }
+    .error { border: 1px solid red; }
 }
