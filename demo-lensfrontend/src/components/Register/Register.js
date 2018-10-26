@@ -193,7 +193,8 @@ class Register extends Component {
                 document.getElementById(e.target.id).parentNode.append(node);
             }
                     break;
-                default: break;
+                default:this.setState(state => { state.field[name] = value });
+                break;
             }
         }
     }
