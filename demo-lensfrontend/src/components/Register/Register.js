@@ -28,7 +28,18 @@ class Register extends Component {
         };
         this.handleChange = this.handleChange.bind(this);
     }
-
+    handleSubmit=(e)=>{
+        let state=this.state.field;
+        const user={email:'',birthdate:'',password:'',fullname:'',gender:'',isAccept:''};
+            user.email=state.email;
+            // user.birthdate=new Date(""+state.date+"-"+state.month+"-"+state.year+"").toISOString();
+            user.password=state.password;
+            user.fullname=state.fullname;
+            user.gender=state.gender;
+            user.isAccept=state.isAccept;
+            // console.log(new Date(""+state.date+"-"+state.month+"-"+state.year+"").toISOString());
+        console.log(user);
+    }
     handleChange = (e) => {
         if (e.value !== undefined || e.value != null) {
             let value = e.value;
@@ -38,6 +49,7 @@ class Register extends Component {
         else {
             let value = e.target.value;
             let name = e.target.name;
+            let check = e.target.checked;
             let node = document.createElement("SPAN");
             node.setAttribute("id","validate"+e.target.id);
             node.setAttribute("style","border:none;font-size:12px;color:red;height:0px;");
@@ -193,6 +205,16 @@ class Register extends Component {
                 document.getElementById(e.target.id).parentNode.append(node);
             }
                     break;
+                case "isAccept":if(check){
+                    this.setState(state => { state.validate[name] =  true});
+                    this.setState(state => { state.field[name] = check });
+                }
+                else{
+                    console.log(check)
+                    this.setState(state => { state.validate[name] =  false});
+                    this.setState(state => { state.field[name] = false });
+                }
+                break;
                 default:this.setState(state => { state.field[name] = value });
                 break;
             }
@@ -221,6 +243,11 @@ class Register extends Component {
                 <div className="form-group">
                     <div className="col-lg-5">
                         <input type="password" id="confirmpassword" name="confirmpassword" className="form-control" placeholder="ยืนยันรหัสผ่าน" onChange={(e)=>this.handleChange(e)} />
+                    </div>
+                </div>
+                <div className="form-group">
+                    <div className="col-lg-5">
+                        <input type="text" id="fullname" name="fullname" className="form-control" placeholder="คุณชื่ออะไร" onChange={(e)=>this.handleChange(e)} />
                     </div>
                 </div>
                 <div className="form-group">
@@ -254,7 +281,7 @@ class Register extends Component {
                 </div>
                 <div className="form-group">
                     <div className="col-lg-5" style={{ textAlign: "center" }}>
-                        <Checkbox > แชร์ข้อมูลการลงทะเบียนของฉันกับผู้ให้บริการของ LenLineUp เพื่อวัตถุประสงค์ทางการตลาด </Checkbox>
+                        <Checkbox onChange={(e)=>this.handleChange(e)} name="isAccept"> แชร์ข้อมูลการลงทะเบียนของฉันกับผู้ให้บริการของ LenLineUp เพื่อวัตถุประสงค์ทางการตลาด </Checkbox>
                     </div>
                 </div>
                 <div className="form-group">
@@ -271,7 +298,7 @@ class Register extends Component {
 
                 <div className="form-group">
                     <div className="col-lg-5" style={{ textAlign: "center" }}>
-                        <button className="btn btn-primary" onClick={console.log(this)} >สมัครสมาชิก</button>
+                        <button type="button" className="btn btn-primary" onClick={()=>this.handleSubmit()} >สมัครสมาชิก</button>
                     </div>
                 </div>
                 <div className="form-group">
