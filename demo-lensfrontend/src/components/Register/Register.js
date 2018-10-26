@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import ModernDatepicker from 'react-modern-datepicker';
 import './Register.css'
-import { ButtonGroup, Button, Checkbox } from 'react-bootstrap';
+import { ToggleButtonGroup, ToggleButton, Checkbox } from 'react-bootstrap';
 import Select from 'react-select';
 import { NavLink } from 'react-router-dom';
 const options = [
@@ -23,13 +23,16 @@ class Register extends Component {
         super(props)
         this.state = {
             field: {},
-            validate: {},
+            validate: {confirmemail:false,confirmpassword:false,date:false,isAccept:false,email:false,password:false,year:false,month:false,gender:false},
             reset:false
         };
         this.handleChange = this.handleChange.bind(this);
     }
     handleSubmit=(e)=>{
         let state=this.state.field;
+        let validate=this.state.validate;
+        if(Object.values(validate)
+        .every(item => item === true)){
         const user={email:'',birthdate:'',password:'',fullname:'',gender:'',isAccept:''};
             user.email=state.email;
             // user.birthdate=new Date(""+state.date+"-"+state.month+"-"+state.year+"").toISOString();
@@ -38,13 +41,17 @@ class Register extends Component {
             user.gender=state.gender;
             user.isAccept=state.isAccept;
             // console.log(new Date(""+state.date+"-"+state.month+"-"+state.year+"").toISOString());
-        console.log(user);
+            console.log(validate)
+            console.log(state)
+            console.log(user);
+        }
     }
     handleChange = (e) => {
         if (e.value !== undefined || e.value != null) {
             let value = e.value;
             let name = e.name;
             this.setState(state => { state.field[name] = value });
+            this.setState(state => { state.validate[name] = true });
         }
         else {
             let value = e.target.value;
@@ -173,6 +180,7 @@ class Register extends Component {
                 if(value.length>0){
                 if (regemail.test(value)) {
                     this.setState(state => { state.field[name] = value });
+                    this.setState(state => { state.validate[name] = true });
                     e.target.className = "form-control";
                     if(document.getElementById("validate"+e.target.id)!==null)
                     {
@@ -210,7 +218,15 @@ class Register extends Component {
                     this.setState(state => { state.field[name] = check });
                 }
                 else{
-                    console.log(check)
+                    this.setState(state => { state.validate[name] =  false});
+                    this.setState(state => { state.field[name] = false });
+                }
+                break;
+                case "gender":if(value){
+                    this.setState(state => { state.field[name] = value });
+                    this.setState(state => { state.validate[name] =  true});
+                }
+                else{
                     this.setState(state => { state.validate[name] =  false});
                     this.setState(state => { state.field[name] = false });
                 }
@@ -262,6 +278,7 @@ class Register extends Component {
                                     value={this.state.field.month}
                                     onChange={(e)=>this.handleChange(e)}
                                     options={options}
+                                    name="month"
                                 />
                             </div>
                             <div style={{ width: '30%' }}>
@@ -272,11 +289,12 @@ class Register extends Component {
                 </div>
                 <div className="form-group">
                     <div className="col-lg-5" style={{ textAlign: "center" }}>
-                        <ButtonGroup onClick={(e)=>this.handleChange(e)}>
-                            <Button name="gender" value="ชาย">ชาย</Button>
-                            <Button name="gender" value="หญิง">หญิง</Button>
-                            <Button name="gender" value="อื่นๆ">อื่นๆ</Button>
-                        </ButtonGroup>
+
+                        <ToggleButtonGroup type="radio"  name="gender" onFocus={(e)=>this.handleChange(e)}>
+                            <ToggleButton  style={{border:'none'}}  value="ชาย" >ชาย</ToggleButton>
+                            <ToggleButton  style={{border:'none'}}  value="หญิง" >หญิง</ToggleButton>
+                            <ToggleButton  style={{border:'none'}}  value="อื่นๆ" >อื่นๆ</ToggleButton>
+                        </ToggleButtonGroup>
                     </div>
                 </div>
                 <div className="form-group">
