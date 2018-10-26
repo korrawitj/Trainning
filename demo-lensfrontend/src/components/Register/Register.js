@@ -30,17 +30,21 @@ class Register extends Component {
     }
 
     handleChange = (e) => {
-        if(e.value!==undefined||e.value!=null)
-        {
+        if (e.value !== undefined || e.value != null) {
             let value = e.value;
             let name = e.name;
-            this.setState(state=>{state.field[name]=value});
+            this.setState(state => { state.field[name] = value });
         }
-        else{
-            let value =e.target.value;
+        else {
+            let value = e.target.value;
             let name = e.target.name;
-            let regdate =/^[0-9]{1,2}$/;
-            let regyear =/^[0-9]{1,4}$/;
+            let node = document.createElement("SPAN");
+            node.setAttribute("id","validate"+e.target.id);
+            node.setAttribute("style","border:none;font-size:12px;color:red;height:0px;");
+            node.setAttribute("class","form-control");
+            let regdate = /^[0-9]{1,2}$/;
+            let regyear = /^[0-9]{1,4}$/;
+            let regemail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
             switch (name) {
                 case "date": if (regdate.test(value) && value <= 31) {
                     this.setState(state => { state.field[name] = value });
@@ -52,6 +56,61 @@ class Register extends Component {
                     e.target.value = "";
                 }
                     break;
+                case "password": if (value.length > 0) {
+                    this.setState(state => { state.field[name] = value });
+                    this.setState(state => { state.validate[name] = true });
+                    e.target.className = "form-control";
+                    if(document.getElementById("validate"+e.target.id)!==null)
+                    {
+                        document.getElementById("validate"+e.target.id).remove();
+                    }
+                }
+                else {
+                    this.setState(state => { state.validate[name] = false });
+                    this.setState(state => { state.field[name] = "" });
+                    e.target.className = "form-control error";
+                            let textnode = document.createTextNode("This Password Is Require");
+                            node.appendChild(textnode);
+                            document.getElementById(e.target.id).parentNode.append(node);
+                }
+                    break;
+                case "confirmpassword":
+                    if (value.length > 0) {
+                        this.setState(state => { state.field[name] = value });
+                        if (this.state.field.password === value) {
+                            this.setState(state => { state.validate[name] = true });
+                            e.target.className = "form-control";
+                            if(document.getElementById("validate"+e.target.id)!==null)
+                            {
+                                document.getElementById("validate"+e.target.id).remove();
+                            }
+                        }
+                        else {
+                            if(document.getElementById("validate"+e.target.id)!==null)
+                            {
+                                document.getElementById("validate"+e.target.id).remove();
+                            }
+                            this.setState(state => { state.validate[name] = false });
+                            this.setState(state => { state.field[name] = "" });
+                            e.target.className = "form-control error";
+                            let textnode = document.createTextNode("Confirm Password Is Not Match");
+                            node.appendChild(textnode);
+                            document.getElementById(e.target.id).parentNode.append(node);
+                        }
+                    }
+                    else{
+                        if(document.getElementById("validate"+e.target.id)!==null)
+                        {
+                            document.getElementById("validate"+e.target.id).remove();
+                        }
+                        this.setState(state => { state.validate[name] = false });
+                        this.setState(state => { state.field[name] = "" });
+                        e.target.className = "form-control error";
+                        let textnode = document.createTextNode("Confirm Password Is Require");
+                        node.appendChild(textnode);
+                        document.getElementById(e.target.id).parentNode.append(node);
+                    }
+                    break;
                 case "year": if (regyear.test(value)) {
                     this.setState(state => { state.field[name] = value });
                     this.setState(state => { state.validate[name] = true });
@@ -59,38 +118,85 @@ class Register extends Component {
                 else {
                     this.setState(state => { state.validate[name] = false });
                     this.setState(state => { state.field[name] = "" });
+                      
                     e.target.value = "";
                 }
-                    break;  
-                    case "confirmemail": if(value.length>0){
-                        this.setState(state => { state.field[name] = value });
-                        if(this.state.field.email===value)
-                        {
+                    break;
+                case "confirmemail": if (value.length > 0) {
+                    this.setState(state => { state.field[name] = value });
+                    if (this.state.field.email === value) {
                         this.setState(state => { state.validate[name] = true });
-                            e.target.className="form-control";
-                        }
-                        else{
-                            this.setState(state => { state.validate[name] = false });
-                            e.target.className="form-control error";
+                        e.target.className = "form-control";
+                        if(document.getElementById("validate"+e.target.id)!==null)
+                        {
+                            document.getElementById("validate"+e.target.id).remove();
                         }
                     }
                     else {
-                        this.setState(state => { state.validate[name] = false });
-                        this.setState(state => { state.field[name] = "" });
-                        e.target.value = "";
-                    }
-                        break;                  
-                        case "email": if(value.length>0){
-                            this.setState(state => { state.field[name] = value });
+                        if(document.getElementById("validate"+e.target.id)!==null)
+                        {
+                            document.getElementById("validate"+e.target.id).remove();
                         }
-                     break;                  
+                        this.setState(state => { state.validate[name] = false });
+                        e.target.className = "form-control error";
+                        let textnode = document.createTextNode("Email Is Not Match");
+                        node.appendChild(textnode);
+                        document.getElementById(e.target.id).parentNode.append(node);
+                    }
+                }
+                else {
+                    if(document.getElementById("validate"+e.target.id)!==null)
+                    {
+                        document.getElementById("validate"+e.target.id).remove();
+                    }
+                    this.setState(state => { state.validate[name] = false });
+                    this.setState(state => { state.field[name] = "" });
+                    e.target.className = "form-control error";
+                    let textnode = document.createTextNode("Confirm Email Is Require");
+                    node.appendChild(textnode);
+                    document.getElementById(e.target.id).parentNode.append(node);
+                }
+                    break;
+                case "email": 
+                if(value.length>0){
+                if (regemail.test(value)) {
+                    this.setState(state => { state.field[name] = value });
+                    e.target.className = "form-control";
+                    if(document.getElementById("validate"+e.target.id)!==null)
+                    {
+                        document.getElementById("validate"+e.target.id).remove();
+                    }
+                }
+                else {
+                    if(document.getElementById("validate"+e.target.id)!==null)
+                    {
+                        document.getElementById("validate"+e.target.id).remove();
+                    }
+                    this.setState(state => { state.validate[name] = false });
+                    this.setState(state => { state.field[name] = "" });
+                    e.target.className = "form-control error";
+                    let textnode = document.createTextNode("Email Is Not Valid");
+                    node.appendChild(textnode);
+                    document.getElementById(e.target.id).parentNode.append(node);
+                }
+            }
+            else{
+                if(document.getElementById("validate"+e.target.id)!==null)
+                {
+                    document.getElementById("validate"+e.target.id).remove();
+                }
+                this.setState(state => { state.validate[name] = false });
+                this.setState(state => { state.field[name] = "" });
+                e.target.className = "form-control error";
+                let textnode = document.createTextNode("Email Is Require");
+                node.appendChild(textnode);
+                document.getElementById(e.target.id).parentNode.append(node);
+            }
+                    break;
                 default: break;
             }
-            // this.setState(state=>{state.field[name]=value});
-            
         }
-        
-      }
+    }
 
     render() {
         return (
@@ -98,22 +204,22 @@ class Register extends Component {
             <div className="marginDefault">
                 <div className="form-group">
                     <div className="col-lg-5">
-                        <input type="email" name="email" className="form-control" placeholder="อีเมล" onChange={(e)=>this.handleChange(e)} />
+                        <input type="email" id="email"name="email" className="form-control" placeholder="อีเมล" onChange={(e)=>this.handleChange(e)} />
                     </div>
                 </div>
                 <div className="form-group">
                     <div className="col-lg-5">
-                        <input type="email" name="confirmemail" className="form-control" placeholder="ยืนยันอีเมล"  onChange={(e)=>this.handleChange(e)}/>
+                        <input type="email" id="confirmemail" name="confirmemail" className="form-control" placeholder="ยืนยันอีเมล"  onChange={(e)=>this.handleChange(e)}/>
+                    </div>
+                </div>
+                <div className="form-group">
+                    <div className="col-lg-5" >
+                        <input type="password" id="password" name="password" className=" form-control" placeholder="รหัสผ่าน" value={this.state.field.password} onChange={(e)=>this.handleChange(e)} />
                     </div>
                 </div>
                 <div className="form-group">
                     <div className="col-lg-5">
-                        <input type="password" name="password" className=" form-control" placeholder="รหัสผ่าน" onChange={(e)=>this.handleChange(e)} />
-                    </div>
-                </div>
-                <div className="form-group">
-                    <div className="col-lg-5">
-                        <input type="password" name="confirm-password" className="form-control" placeholder="ยืนยันรหัสผ่าน" onChange={(e)=>this.handleChange(e)} />
+                        <input type="password" id="confirmpassword" name="confirmpassword" className="form-control" placeholder="ยืนยันรหัสผ่าน" onChange={(e)=>this.handleChange(e)} />
                     </div>
                 </div>
                 <div className="form-group">
@@ -129,24 +235,12 @@ class Register extends Component {
                                     onChange={(e)=>this.handleChange(e)}
                                     options={options}
                                 />
-                                {/* <input type="text" className="form-control" placeholder="เดือน" style={{ textAlign: "right" }} /> */}
                             </div>
                             <div style={{ width: '30%' }}>
                                 <input type="text" name="year" className="form-control" placeholder="ปี" onChange={(e)=>this.handleChange(e)} />
                             </div>
                         </div>
                     </div>
-                    {/* <div className="col-lg-4" style={{ zIndex: '500' }}>
-                        <ModernDatepicker
-                            date={this.state.startDate}
-                            format={'DD MM YYYY'}
-                            showBorder
-                            onChange={(date) => this.handleChange(date)}
-                            placeholder={'Select a date'}
-                            className="form-control"
-                            style={{textAlign:"center"}}
-                        />
-                    </div> */}
                 </div>
                 <div className="form-group">
                     <div className="col-lg-5" style={{ textAlign: "center" }}>
