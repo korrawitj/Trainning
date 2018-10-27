@@ -1,22 +1,43 @@
-
-@media (max-width:768px){
-    .marginDefault{
-        margin-top:2rem;
-        margin-bottom:2rem;
-        position: sticky;
-        top: 50%;
-        left: 50%;
-        }
-        .error { border: 1px solid red; }
+.error { 
+    border: 1px solid red;
 }
-@media (min-width:768px){
-    .marginDefault{
-        margin-top:6rem;
-        margin-bottom:2rem;
-        position: sticky;
-        margin-left: 40%;
-        top: 50%;
-        left: 50%;
+
+.row {
+    margin: 0px;
+}
+
+.btn-submit {
+    width: 50%;
+    border-radius: 50px !important;
+}
+
+label {
+    font-family: 'Kanit', sans-serif;
+}
+
+.link-btn{
+    color: #ffc107;
+    margin-left: 5px;
+}
+
+.link-btn:hover{
+    color: #c49302;
+}
+
+.link-btn:active{
+    color: #755800;
+}
+
+@media (max-width: 768px)
+{
+    .container-margin {
+        margin-top: 2rem;
     }
-    .error { border: 1px solid red; }
+}
+
+@media (min-width: 768px)
+{
+    .container-margin {
+        margin-top: 7rem;
+    }
 }
